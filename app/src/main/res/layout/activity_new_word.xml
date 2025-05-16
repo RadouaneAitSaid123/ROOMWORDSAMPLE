@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="24dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="8dp">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="32dp"
+            tools:context=".NewWordActivity">
+
+        <EditText
+                android:id="@+id/edit_word"
+                style="@style/word_title"
+                android:hint="@string/hint_word"
+                android:inputType="textAutoComplete"
+                android:backgroundTint="@color/white"
+                android:layout_marginBottom="24dp"/>
+
+        <Button
+                android:id="@+id/button_save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/button_save"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="@color/black"
+                android:textColor="@color/white"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+
